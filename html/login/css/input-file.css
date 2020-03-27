@@ -1,0 +1,71 @@
+.inf__drop-area * {
+    box-sizing: border-box;
+}
+
+.inf__drop-area {
+    background-color: #5d658824;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 290px;
+    right: 180px;
+    bottom: 50px;
+    max-width: 100%;
+    border: 1px dashed #000000;
+    border-radius: 3px;
+    padding: 0 20px;
+    transition: 0.2s;
+}
+
+form .form-control {
+    display: block;
+    width: 70%;
+    height: 40px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #5f5555;
+    background-color: #5157d821;
+    background-image: none;
+    border: 1px solid #756f6f;
+    border-radius: 17px;
+}
+
+.inf__drop-area.is-active {
+    background-color: rgba(0, 20, 20, 0.03);
+}
+
+input[type="file"] {
+    direction: ltr;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input[type="file"]:focus {
+    outline: none;
+}
+
+.inf__btn {
+    display: inline-block;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    padding: 5px 12px;
+    margin-right: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.inf__hint {
+    flex: 1;
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
