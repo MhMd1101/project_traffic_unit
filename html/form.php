@@ -31,7 +31,7 @@ include_once "../vendor/include/navbar.php";
 <body>
 
 <!-- form-horizontal -->
-    <form class="form-group" method="post" action="" enctype="multipart/form-data">
+    <form class="form-group" method="post" action="../logic/up_file/upload.php" enctype="multipart/form-data">
         <h1 class="text-center">تسجيل بيانات الرخصة </h1>
 
         <div>
@@ -42,13 +42,13 @@ include_once "../vendor/include/navbar.php";
             <label> السن </label> <input class="form-control" type="number" name="age" placeholder="Age">
         </div>
         <br><br>
-        <label> صور الشخصية </label> <input type="file" name="files" multiple>
+        <label> صور الشخصية </label> <input type="file" name="person" multiple>
         <!-- <br> -->
-        <label> صور الرقم القؤمي </label> <input type="file" name="files" multiple>
+        <label> صور الرقم القؤمي </label> <input type="file" name="national_id" multiple>
         <!-- <br> -->
-        <label> صور المؤاهل الدراسي </label> <input type="file" name="files" multiple>
+        <label> صور المؤاهل الدراسي </label> <input type="file" name="qualification" multiple>
         <!-- <br> -->
-        <label> صور الشهادة الصحية </label> <input type="file" name="files" multiple>
+        <label> صور الشهادة الصحية </label> <input type="file" name="Health" multiple>
         <!-- <br> -->
         <input class="btn btn-success btn-lg text-center btn-block" type="submit" value="Send">
         <br>
